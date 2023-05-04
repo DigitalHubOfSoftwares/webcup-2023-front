@@ -1,6 +1,6 @@
 // components/UnderMaintenance.tsx
 
-import * as React from 'react';
+import React, {useState, useEffect} from 'react';
 import Image from 'next/image';
 
 type UnderMaintenanceProps = {
@@ -9,9 +9,23 @@ type UnderMaintenanceProps = {
 };
 
 const UnderMaintenance: React.FC<UnderMaintenanceProps> = ({ message = 'We are currently under maintenance.', maintenanceEnd }) => {
-	const [timeLeft, setTimeLeft] = React.useState(maintenanceEnd.getTime() - new Date().getTime());
+	const [timeLeft, setTimeLeft] = useState(maintenanceEnd.getTime() - new Date().getTime());
+	const [data, setData] = useState<any>(null);
 
-	React.useEffect(() => {
+	useEffect(() => {
+		fetch(process.env.NEXT_PUBLIC_BACKEND_API as string)
+			.then((res) => res.json())
+			.then((data) => {
+			setData(data);
+			});
+	}, []);
+
+	if (data){
+		console.log('Test:');
+		console.log(data);
+	}
+
+	useEffect(() => {
 		const interval = setInterval(() => {
 		  setTimeLeft(maintenanceEnd.getTime() - new Date().getTime());
 		}, 1000);
@@ -36,6 +50,7 @@ const UnderMaintenance: React.FC<UnderMaintenanceProps> = ({ message = 'We are c
 			</video>
 			<div className="absolute flex w-full flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 z-10">
 				<div className="flex flex-col w-full items-center justify-center px-6 py-8 mx-auto">
+					{/* {apiData && JSON.stringify(apiData)} */}
 					<Image className='rounded-2xl' src={process.env.NEXT_PUBLIC_PREFIX_URL + '/assets/images/maintenance_logo.jpg'} width={100} height={100} alt='SystemAliens'></Image>
 					<h1 className="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 lg:mb-6 md:text-5xl xl:text-6xl dark:text-white">Website Coming Soon...in {formatTimeLeft(timeLeft)}</h1>
 					<p className="font-light text-gray-500 md:text-lg xl:text-xl dark:text-gray-400">Attention earthlings! We, the System Aliens, are currently conducting some essential maintenance on our systems.</p>
