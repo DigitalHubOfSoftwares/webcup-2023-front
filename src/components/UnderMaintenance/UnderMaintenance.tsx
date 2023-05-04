@@ -10,20 +10,7 @@ type UnderMaintenanceProps = {
 
 const UnderMaintenance: React.FC<UnderMaintenanceProps> = ({ message = 'We are currently under maintenance.', maintenanceEnd }) => {
 	const [timeLeft, setTimeLeft] = useState(maintenanceEnd.getTime() - new Date().getTime());
-	const [data, setData] = useState<any>(null);
 
-	useEffect(() => {
-		fetch(process.env.NEXT_PUBLIC_BACKEND_API as string)
-			.then((res) => res.json())
-			.then((data) => {
-			setData(data);
-			});
-	}, []);
-
-	if (data){
-		console.log('Test:');
-		console.log(data);
-	}
 
 	useEffect(() => {
 		const interval = setInterval(() => {
