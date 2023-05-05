@@ -1,15 +1,26 @@
 import React, { useEffect } from 'react';
 import Layout from '@/src/components/Layout';
-import { useRouter } from 'next/router'
 import HeroSection from '@/src/components/HeroSection/HeroSection';
 
 export default function Home() {
-
-	const router = useRouter();
-
 	useEffect(() => {
-		alert(router.query.message); 
-	}, [router.query]);
+		const userItem = localStorage.getItem("user");
+
+		//console.log(userItem);
+		if(userItem){
+			const user = JSON.parse(userItem);
+		
+			if (user) {
+			  console.log("Logged in as: ", user);
+			} else {
+			  console.log("Not logged in");
+			}
+		} else{
+			console.log('Error Not Logged');
+		}
+	});
+
+
 
 	return (
 		<Layout title={'Welcome To System Aliens'}>
