@@ -7,6 +7,7 @@ export default function Login() {
 
 	const [email, setEmail] = useState<string>('');
 	const [password, setPassword] = useState<string>('');
+	const [isLoggedIn, setIsLoggedIn] = useState<boolean>(true);
 	const router = useRouter();
 
 	useEffect(() => {
@@ -27,9 +28,11 @@ export default function Login() {
 				);
 			} else {
 			  console.log("Not logged in");
+			  setIsLoggedIn(false);
 			}
 		} else{
 			console.log('Error Not Logged');
+			setIsLoggedIn(false);
 		}
 
 	}, []);
@@ -93,6 +96,8 @@ export default function Login() {
 	}
 
 	return (
-		<LoginForm onSubmit={handleSubmit} email={email} setEmail={setEmail} password={password} setPassword={setPassword}/>
+		<>
+			{ isLoggedIn == false && (<LoginForm onSubmit={handleSubmit} email={email} setEmail={setEmail} password={password} setPassword={setPassword}/>)}
+		</>
 	);
 }
