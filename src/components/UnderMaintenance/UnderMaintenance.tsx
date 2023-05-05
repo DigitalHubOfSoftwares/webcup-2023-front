@@ -11,7 +11,6 @@ type UnderMaintenanceProps = {
 const UnderMaintenance: React.FC<UnderMaintenanceProps> = ({ message = 'We are currently under maintenance.', maintenanceEnd }) => {
 	const [timeLeft, setTimeLeft] = useState(maintenanceEnd.getTime() - new Date().getTime());
 
-
 	useEffect(() => {
 		const interval = setInterval(() => {
 		  setTimeLeft(maintenanceEnd.getTime() - new Date().getTime());
