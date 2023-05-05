@@ -26,6 +26,7 @@ export const authOptions:NextAuthOptions = {
 		  const {username,password} = credentials as any;
 		  
 		  const res = await fetch(process.env.NEXT_PUBLIC_BACKEND_API_LOGIN as string, {
+			credentials: 'include',
 			method: 'POST',
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({
@@ -37,7 +38,7 @@ export const authOptions:NextAuthOptions = {
 	
 		  // If no error and we have user data, return it
 		  if (res.ok && user) {
-			// console.log(user)
+			console.log(user)
 			// console.log("UserData" + user.message);
 			return user
 		  }
