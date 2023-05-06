@@ -64,6 +64,11 @@ export default function Home() {
 		checkLoggedIn();
 	}, []);
 
+	const logOut = async () => {
+		const response = await fetch(process.env.NEXT_PUBLIC_BACKEND_API_LOGOUT as string, {
+			credentials: 'include',
+		});
+	}
 
 
 	return (
@@ -97,6 +102,8 @@ export default function Home() {
 							</div>
 						</div>
 					</section>
+
+					<button onClick={logOut}>LogOut </button>
 				</div>
 			)}
 		</Layout>

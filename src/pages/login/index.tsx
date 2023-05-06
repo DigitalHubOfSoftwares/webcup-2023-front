@@ -2,6 +2,7 @@ import React, {useEffect, useState}  from 'react';
 import LoginForm from '../../components/Login/login';
 import { useRouter } from "next/router";
 import { signIn } from 'next-auth/react';
+import { cookies } from 'next/headers';
 
 export default function Login() {
 
@@ -79,8 +80,10 @@ export default function Login() {
 		if (response.ok) {
 			const data = await response.json();
 			// Handle the response data as needed, perhaps storing it in local state, localStorage or cookies
-			console.log(data);
-
+			const cookies = response.headers.get('Set-Cookie');
+			if (cookies) {
+				document.cookie = cookies;
+			}
 			router.push(
 				{
 					pathname: "/home",
