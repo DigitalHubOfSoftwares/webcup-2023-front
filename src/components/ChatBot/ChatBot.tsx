@@ -3,42 +3,46 @@ import InputComponent from "./InputComponent/InputComponent";
 import ChatLayout from "./ChatLayout/ChatLayout";
 import ChatHeader from "./ChatHeader/ChatHeader";
 import ChatView from "./ChatView/ChatView";
-
+type Prediction = {
+    request: string,
+    response: string
+}
 const ChatBot = () => {
 
-    const [data, setData] = useState<any>([]);
+    const [predictions, setPredictions] = useState<Prediction[]>([]);
 
-    const handleSubmit = (data: any) => {
-        console.log("INmom");
-        setData(data);
+    const handleSubmit = (prediction: any) => {
+        console.log(prediction);
+        let predictionToChat : Prediction = {
+            request: prediction.userRequest,
+            response: prediction.description
+        }
+        console.log(predictionToChat);
+        setPredictions([...predictions, predictionToChat]);
+        console.log(predictions)
     }
-
-    useEffect(() => {
-        console.log("Send")
-        console.log(data);
-    }, []);
 
     const chatTexts = [
         {
-            from: "Hello, How Are you?",
-            to: "Im Fine."
+            response: "Hello, How Are you?",
+            request: "Im Fine."
         },
         {
-            from: "Ask Me Anything?",
-            to: "What are you?"
+            response: "Ask Me Anything?",
+            request: "What are you?"
         },
         {
-            from: "Hello, How Are you?",
-            to: "Im Fine."
+            response: "Hello, How Are you?",
+            request: "Im Fine."
         },
     ];
 
     return (
         <ChatLayout>
-            {JSON.stringify(data)}
+            {JSON.stringify(predictions)}
             <ChatHeader/>
             <div className="w-full my-7">
-                <ChatView data={chatTexts}/>
+                <ChatView data={predictions}/>
             </div>
             <InputComponent handleSubmit={handleSubmit} />
         </ChatLayout>  
