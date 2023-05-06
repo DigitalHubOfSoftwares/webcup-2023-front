@@ -7,9 +7,14 @@ import MainFooter from './MainFooter/MainFooter';
 type LayoutProps = {
   children: React.ReactNode;
   title?: string;
+  logOut?: any;
+  IsLoggedIn? : boolean;
 };
 
-const Layout: React.FC<LayoutProps> = ({ children, title = 'DHS' }) => {
+const Layout: React.FC<LayoutProps> = ({ children, title = 'DHS', logOut, IsLoggedIn }) => {
+
+	const AppName : string | undefined = process.env.NEXT_PUBLIC_APP_NAME;
+	console.log(IsLoggedIn);
   return (
 		<div>
 			<Head>
@@ -17,9 +22,9 @@ const Layout: React.FC<LayoutProps> = ({ children, title = 'DHS' }) => {
 				<meta charSet="utf-8" />
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 			</Head>
-			<MainHeader/>
+			<MainHeader app_name={ AppName } logOut={logOut} IsLoggedIn={IsLoggedIn}/>
 			<main>{children}</main>
-			<MainFooter/>
+			<MainFooter app_name={ AppName }/>
 		</div>
   );
 };
