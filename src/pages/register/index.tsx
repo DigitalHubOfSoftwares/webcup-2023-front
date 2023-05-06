@@ -58,7 +58,7 @@ export default function Register() {
 			}
 			router.push(
 				{
-					pathname: "/home",
+					pathname: "/",
 					query: {message: data.message}
 				},
 				"home"
