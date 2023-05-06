@@ -14,9 +14,14 @@ export default function Home() {
 			});
 
 			if (!response.ok) {
-			  // Handle error here
-			  console.log("Error: ", response.status);
-			  return;
+				// Handle error here
+				console.log("Error: ", response.status);
+				router.push(
+				{
+					pathname: "/login",
+				},
+				"login"
+				);
 			}
 
 			const data = await response.json();
