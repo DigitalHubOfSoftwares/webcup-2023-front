@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Layout from '@/src/components/Layout';
-import HeroSection from '@/src/components/HeroSection/HeroSection';
 import { useRouter } from "next/router";
 import Link from 'next/link';
 
