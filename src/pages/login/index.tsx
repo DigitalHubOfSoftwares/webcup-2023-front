@@ -1,8 +1,6 @@
 import React, {useEffect, useState}  from 'react';
 import LoginForm from '../../components/Login/login';
 import { useRouter } from "next/router";
-import { signIn } from 'next-auth/react';
-import { cookies } from 'next/headers';
 
 export default function Login() {
 
@@ -12,8 +10,6 @@ export default function Login() {
 	const router = useRouter();
 
 	useEffect(() => {
-		//const userItem = localStorage.getItem("user");
-
         fetch(process.env.NEXT_PUBLIC_BACKEND_API_DATA as string, {
 			credentials: 'include',
 		})
@@ -43,27 +39,6 @@ export default function Login() {
 		console.log('Password:' + password);
 		console.log('Logging In');
 
-		// const result = await signIn("credentials",{
-		// 	username: email,
-		// 	password: password,
-		// 	redirect: false,
-		// 	callbackUrl: "/home"
-		// });
-
-
-		// if (result?.ok) {
-		// 	console.log(result);
-		// 	router.push(
-		// 		{
-		// 			pathname: "/home",
-		// 			query: {message: email}
-		// 		},
-		// 		"home"
-		// 	);
-		// } else {
-		// 	console.error("Login failed");
-		// }
-
 		const response = await fetch(process.env.NEXT_PUBLIC_BACKEND_API_LOGIN as string, {
 			method: 'POST',
 			headers: {
@@ -71,15 +46,13 @@ export default function Login() {
 			},
 			body: JSON.stringify({
 				"username": email,
-				"password": password			
+				"password": password			
 			}),
 			credentials: 'include',
 		});
-		
 
 		if (response.ok) {
 			const data = await response.json();
-			// Handle the response data as needed, perhaps storing it in local state, localStorage or cookies
 			const cookies = response.headers.get('Set-Cookie');
 			if (cookies) {
 				document.cookie = cookies;
