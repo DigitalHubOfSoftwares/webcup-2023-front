@@ -10,6 +10,20 @@ type Prediction = {
 const ChatBot = () => {
 
     const [predictions, setPredictions] = useState<Prediction[]>([]);
+    const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+
+    const handleDarkModeToggle = () => {
+        console.log("toggle DarkMode" + isDarkMode);
+        if (isDarkMode == false) {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-mode', 'dark');
+          setIsDarkMode(true);
+        } else {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-mode', 'light');
+          setIsDarkMode(false);
+        }
+    }
 
     const handleSubmit = (prediction: any) => {
         console.log(prediction);
@@ -22,20 +36,22 @@ const ChatBot = () => {
         console.log(predictions)
     }
 
-    const chatTexts = [
-        {
-            response: "Hello, How Are you?",
-            request: "Im Fine."
-        },
-        {
-            response: "Ask Me Anything?",
-            request: "What are you?"
-        },
-        {
-            response: "Hello, How Are you?",
-            request: "Im Fine."
-        },
-    ];
+    // const chatTexts = [
+    //     {
+    //         response: "Hello, How Are you?",
+    //         request: "Im Fine."
+    //     },
+    //     {
+    //         response: "Ask Me Anything?",
+    //         request: "What are you?"
+    //     },
+    //     {
+    //         response: "Hello, How Are you?",
+    //         request: "Im Fine."
+    //     },
+    // ];
+
+    
 
     return (
         <ChatLayout>
@@ -44,6 +60,8 @@ const ChatBot = () => {
                 <ChatView data={predictions}/>
             </div>
             <InputComponent handleSubmit={handleSubmit} />
+
+            <button onClick={handleDarkModeToggle}>Toggle</button>
         </ChatLayout>  
     );
 }
