@@ -9,7 +9,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
 	useEffect(() => {
 			fetch(process.env.NEXT_PUBLIC_BACKEND_API_MAINTENANCE as string, {}).then(response => response.json())
-			.then(data => setIsUnderMaintenance(data));
+			.then(data => {
+				setIsUnderMaintenance(data)
+			});
 		
 	}, []);
 
