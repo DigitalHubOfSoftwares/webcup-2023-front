@@ -39,7 +39,6 @@ const ChatBot = () => {
 
     return (
         <ChatLayout>
-            {JSON.stringify(predictions)}
             <ChatHeader/>
             <div className="w-full my-7">
                 <ChatView data={predictions}/>

@@ -22,9 +22,9 @@ const ChatView: React.FC<props> = ({data}) => {
                 Hello
             </div>
         </div>
-        { data.map((data : any) => {
+        { data.map((data : any, index : any) => {
             return (
-                <ChatText fromChatBot={data.response} toChatBot={data.request}/>
+                <ChatText key={index} fromChatBot={data.response} toChatBot={data.request}/>
             );
         })}
             
