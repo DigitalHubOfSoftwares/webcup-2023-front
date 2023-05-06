@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 import Layout from '@/src/components/Layout';
 import Link from 'next/link';
 
-export default function journal()
-{
+export default function Journal(){
+
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const router = useRouter();
     const [dreams, setDreams] = useState<any>([]);
@@ -67,9 +67,9 @@ export default function journal()
             <Layout title={'Welcome To ' + process.env.NEXT_PUBLIC_APP_NAME} logOut={logOut} IsLoggedIn={isLoggedIn}>
                 <div className="flex">
                 {
-                        dreams.map((dream : any)=> {
+                        dreams.map((dream : any, index : any)=> {
                             return (
-                                <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                <div key={index} className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                                     <Link href="#">
                                         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{dream.title}</h5>
                                     </Link>
@@ -85,5 +85,5 @@ export default function journal()
                 </div>
             </Layout>
         </>
-    )
+    );
 }

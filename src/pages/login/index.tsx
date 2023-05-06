@@ -20,9 +20,9 @@ export default function Login() {
 				if (data == "logged in data"){
 					router.push(
 					{
-						pathname: "/home",
+						pathname: "/blog",
 					},
-					"home"
+					"blog"
 					);
 				}else{
 					setIsLoggedIn(false)
@@ -59,10 +59,10 @@ export default function Login() {
 			}
 			router.push(
 				{
-					pathname: "/home",
+					pathname: "/blog",
 					query: {message: data.message}
 				},
-				"home"
+				"blog"
 
 			);
 		} else {
