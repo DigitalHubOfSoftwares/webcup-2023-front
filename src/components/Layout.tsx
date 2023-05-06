@@ -10,6 +10,9 @@ type LayoutProps = {
 };
 
 const Layout: React.FC<LayoutProps> = ({ children, title = 'DHS' }) => {
+
+	const AppName : string | undefined = process.env.NEXT_PUBLIC_APP_NAME;
+
   return (
 		<div>
 			<Head>
@@ -17,9 +20,9 @@ const Layout: React.FC<LayoutProps> = ({ children, title = 'DHS' }) => {
 				<meta charSet="utf-8" />
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 			</Head>
-			<MainHeader/>
+			<MainHeader app_name={ AppName }/>
 			<main>{children}</main>
-			<MainFooter/>
+			<MainFooter app_name={ AppName }/>
 		</div>
   );
 };
