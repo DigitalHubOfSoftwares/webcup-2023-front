@@ -2,7 +2,6 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import UnderMaintenance from '@/src/components/UnderMaintenance/UnderMaintenance';
 import { useEffect, useState } from 'react';
-// import { ethers } from 'ethers';
 
 export default function App({ Component, pageProps }: AppProps) {
 	const isUnderMaintenance: boolean = true;
