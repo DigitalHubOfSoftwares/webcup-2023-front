@@ -1,6 +1,5 @@
 // components/Layout.tsx
 import React from 'react';
-import { SessionProvider } from "next-auth/react" 
 import Head from 'next/head';
 import MainHeader from './MainHeader/MainHeader';
 import MainFooter from './MainFooter/MainFooter';

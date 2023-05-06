@@ -8,17 +8,20 @@ export default function Home() {
 	const router = useRouter();
 
 	useEffect(() => {
-		//const userItem = localStorage.getItem("user");
-
         const checkLoggedIn = async () => {
 			const response = await fetch(process.env.NEXT_PUBLIC_BACKEND_API_DATA as string, {
 				credentials: 'include',
 			});
 
 			if (!response.ok) {
-			  // Handle error here
-			  console.log("Error: ", response.status);
-			  return;
+				// Handle error here
+				console.log("Error: ", response.status);
+				router.push(
+				{
+					pathname: "/login",
+				},
+				"login"
+				);
 			}
 
 			const data = await response.json();
@@ -35,32 +38,6 @@ export default function Home() {
 			  setIsLoggedIn(true);
 			}
 		}
-
-		//console.log(userItem);
-		// if(userItem){
-		// 	const user = JSON.parse(userItem);
-		
-		// 	if (user) {
-		// 	  console.log("Logged in as: ", user);
-		// 	  setIsLoggedIn(true);
-		// 	} else {
-		// 	  	console.log("Not logged in");
-		// 	  	router.push(
-		// 		{
-		// 			pathname: "/login",
-		// 		},
-		// 		"login"
-		// 		);
-		// 	}
-		// } else{
-		// 	console.log('Error Not Logged');
-		// 	router.push(
-		// 	{
-		// 		pathname: "/login",
-		// 	},
-		// 	"login"
-		// 	);
-		// }
 		checkLoggedIn();
 	}, []);
 
@@ -69,7 +46,6 @@ export default function Home() {
 			credentials: 'include',
 		});
 	}
-
 
 	return (
 		<Layout title={'Welcome To System Aliens'}>
