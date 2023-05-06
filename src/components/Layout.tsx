@@ -23,7 +23,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title = 'DHS', logOut, IsLogg
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 			</Head>
 			<MainHeader app_name={ AppName } logOut={logOut} IsLoggedIn={IsLoggedIn}/>
-			<main className='bg-main-bg bg-cover bg-no-repeat bg-center'>{children}</main>
+			<main className='bg-light-bg bg-cover bg-no-repeat bg-center dark:bg-dark-bg'>{children}</main>
 			<MainFooter app_name={ AppName }/>
 		</div>
   );

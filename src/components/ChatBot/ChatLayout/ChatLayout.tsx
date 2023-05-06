@@ -7,7 +7,7 @@ type chatLayoutProps = {
 const ChatLayout: React.FC<chatLayoutProps> = ({ children }) => {
     return (
         <section className="flex flex-col mx-11 w-full justify-center md:h-screen lg:py-0">
-            <div>
+            <div className="chat-main-container p-5 backdrop-blur shadow-2xl border-white border-2 rounded-lg ">
                 { children }
             </div>
         </section>
