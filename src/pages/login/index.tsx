@@ -1,7 +1,6 @@
 import React, {useEffect, useState}  from 'react';
 import LoginForm from '../../components/Login/login';
 import { useRouter } from "next/router";
-import MyModal from '@/src/components/MyModal/MyModal';
 
 export default function Login() {
 
@@ -22,9 +21,9 @@ export default function Login() {
 				if (data == "logged in data"){
 					router.push(
 					{
-						pathname: "/blog",
+						pathname: "/",
 					},
-					"blog"
+					""
 					);
 				}else{
 					setIsLoggedIn(false)
@@ -63,10 +62,9 @@ export default function Login() {
 			}
 			router.push(
 				{
-					pathname: "/blog",
-					query: {message: data.message}
+					pathname: "/",
 				},
-				"blog"
+				""
 
 			);
 		} else {
@@ -78,7 +76,6 @@ export default function Login() {
 
 	return (
 		<>
-		{/* <MyModal/> */}
 			{ isLoggedIn == false && (<LoginForm onSubmit={handleSubmit} email={email} setEmail={setEmail} password={password} setPassword={setPassword} IsLoading={IsLoading}/>)}
 		</>
 	);
