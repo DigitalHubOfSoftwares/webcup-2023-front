@@ -10,34 +10,30 @@ type Prediction = {
 const ChatBot = () => {
 
     const [predictions, setPredictions] = useState<Prediction[]>([]);
+    const [predicted, setPredicted] = useState<boolean>(false);
+    const [currentPrediction, setCurrentPrediction] = useState<any>(false);
 
     const handleSubmit = (prediction: any) => {
         console.log(prediction);
+        setCurrentPrediction(prediction);
         let predictionToChat : Prediction = {
             request: prediction.userRequest,
             response: prediction.description
         }
         console.log(predictionToChat);
         setPredictions([...predictions, predictionToChat]);
+        setPredicted(true);
         console.log(predictions)
     }
 
-    // const chatTexts = [
-    //     {
-    //         response: "Hello, How Are you?",
-    //         request: "Im Fine."
-    //     },
-    //     {
-    //         response: "Ask Me Anything?",
-    //         request: "What are you?"
-    //     },
-    //     {
-    //         response: "Hello, How Are you?",
-    //         request: "Im Fine."
-    //     },
-    // ];
+    const resetChatbot = () => {
+        setPredicted(false);
+        setPredictions([]);
+    }
 
-    
+    const sendDetailedReport = () => {
+
+    }
 
     return (
         <ChatLayout>
@@ -47,7 +43,15 @@ const ChatBot = () => {
             </div>
             <InputComponent handleSubmit={handleSubmit} />
 
-            
+            {
+                predicted == true ?
+                <div>
+                    <button onClick={resetChatbot}>Make another prediction</button>
+                    <button onClick={sendDetailedReport}>Send detailed report</button>
+                </div>
+                :
+                <></>
+            }
         </ChatLayout>  
     );
 }
