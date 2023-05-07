@@ -65,7 +65,7 @@ export default function Journal(){
     return (
         <>
             <Layout title={'Welcome To ' + process.env.NEXT_PUBLIC_APP_NAME} logOut={logOut} IsLoggedIn={isLoggedIn}>
-                <div className="flex">
+                <div className="grid grid-cols-4 gap-4">
                 {
                         dreams.map((dream : any, index : any)=> {
                             return (

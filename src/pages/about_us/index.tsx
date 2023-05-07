@@ -22,16 +22,16 @@ export default function AboutUs() {
                         </p>
                     </div>
                     <div className="grid grid-cols-2 gap-4 mt-8">
-                        <img className="w-full rounded-lg" src="https://drive.google.com/uc?id=1Ln2XIhBcNbTL0VLb5HVzPJibwZQjp422" alt="office content 1"/>
-                        <img className="mt-4 w-full lg:mt-10 rounded-lg" src="https://drive.google.com/uc?id=1HO6G9PCS1aUie9zPgA_0Hdh9obywRg27" alt="office content 2"/>
+                        <img className="w-full rounded-lg" src="https://drive.google.com/uc?id=1n0GqerWP04Grl7W1u15ACNrbhPIw-Qox" alt="office content 1"/>
+                        <img className="mt-4 w-full lg:mt-10 rounded-lg" src="https://drive.google.com/uc?id=1KSVMLucdvtuxxGOmTCY-ZcywdJp45lqo" alt="office content 2"/>
                     </div>
                 </div>
             </section>
             <section id="rmtcontent" className="">
                 <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                     <div className="grid grid-cols-2 gap-4 mt-8">
-                        <img className="w-full rounded-lg" src="https://drive.google.com/uc?id=1wq1dV7fHQYtC-SI2LZZp2zKoIeO5V8aH" alt="office content 1"/>
-                        <img className="mt-4 w-full lg:mt-10 rounded-lg" src="https://drive.google.com/uc?id=1JL7TwT6bsJ5SJoAoAE6y7623Uiq4pBMg" alt="office content 2"/>
+                        <img className="w-full rounded-lg" src="https://drive.google.com/uc?id=1LxhvAsD9boesMIco0CESslIRwxA5jm2F" alt="office content 1"/>
+                        <img className="mt-4 w-full lg:mt-10 rounded-lg" src="https://drive.google.com/uc?id=1jrIquFyGsaV0x0uyMZ0rpj2CAUWxXxvC" alt="office content 2"/>
                     </div>
                     <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Vision</h2>
@@ -46,8 +46,8 @@ export default function AboutUs() {
                         <p className="mb-4">The International Dreams Institute values the exploration of the subconscious mind, and believes that by understanding our dreams, we can gain a deeper understanding of ourselves and our place in the world. We are dedicated to advancing the field of dream studies through cutting-edge research and development, and strive to empower individuals to unlock the power of their dreams and achieve their full potential.</p>
                     </div>
                     <div className="grid grid-cols-2 gap-4 mt-8">
-                        <img className="w-full rounded-lg" src="https://drive.google.com/uc?id=1wq1dV7fHQYtC-SI2LZZp2zKoIeO5V8aH" alt="office content 1"/>
-                        <img className="mt-4 w-full lg:mt-10 rounded-lg" src="https://drive.google.com/uc?id=1JL7TwT6bsJ5SJoAoAE6y7623Uiq4pBMg" alt="office content 2"/>
+                        <img className="w-full rounded-lg" src="https://drive.google.com/uc?id=1ThzFhuaoVgTHHuP1SfVwa7Z68JwTGKU8" alt="office content 1"/>
+                        <img className="mt-4 w-full lg:mt-10 rounded-lg" src="https://drive.google.com/uc?id=1bq3SdE0R2pZ_kmqNJZOIwF_P6ml1KuDg" alt="office content 2"/>
                     </div>
                 </div>
             </section>
