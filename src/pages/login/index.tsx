@@ -1,6 +1,7 @@
 import React, {useEffect, useState}  from 'react';
 import LoginForm from '../../components/Login/login';
 import { useRouter } from "next/router";
+import MyModal from '@/src/components/MyModal/MyModal';
 
 export default function Login() {
 
@@ -77,6 +78,7 @@ export default function Login() {
 
 	return (
 		<>
+		{/* <MyModal/> */}
 			{ isLoggedIn == false && (<LoginForm onSubmit={handleSubmit} email={email} setEmail={setEmail} password={password} setPassword={setPassword} IsLoading={IsLoading}/>)}
 		</>
 	);

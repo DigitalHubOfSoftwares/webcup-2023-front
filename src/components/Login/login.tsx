@@ -14,7 +14,7 @@ interface Props {
 const Login : React.FC<Props> = ({ onSubmit, email, setEmail, password, setPassword, IsLoading }) => {
 
 	return(
-		<section className="bg-dark-bg bg-no-repeat bg-cover bg-center dark:bg-dark-bg">
+		<section className="bg-dark-bg flex h-screen bg-no-repeat bg-cover bg-center dark:bg-dark-bg">
 			<div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
 				<Link href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
 				<Image src={process.env.NEXT_PUBLIC_PREFIX_URL + '/assets/images/idi-logo.jpg'} width={140} height={200} className="mr-3 h-6 sm:h-9 rounded" alt="Flowbite Logo" />
