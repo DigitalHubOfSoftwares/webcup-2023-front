@@ -70,6 +70,9 @@ const MainHeader: React.FC<headerProps> = ({ app_name = 'DHS', logOut, IsLoggedI
 							<li>
 								<Link href="about_us" className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">About Us</Link>
 							</li>
+							<li>
+								<Link href="faq" className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">FAQ</Link>
+							</li>
 						</ul>
 					</div>
 				</div>
