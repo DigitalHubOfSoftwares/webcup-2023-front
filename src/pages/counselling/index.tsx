@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Layout from '@/src/components/Layout';
 import Link from 'next/link';
 
-export default function counselling()
+export default function Counselling()
 {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const router = useRouter();
@@ -69,7 +69,7 @@ export default function counselling()
             <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
                 <div className="max-w-screen-md mb-8 lg:mb-16">
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Nightmare</h2>
-                    <p className="text-gray-500 sm:text-xl dark:text-gray-400">Nightmare disorder is referred to by doctors as a parasomnia — a type of sleep disorder that involves undesirable experiences that occur while you're falling asleep, during sleep or when you're waking up. Nightmares usually occur during the stage of sleep known as rapid eye movement (REM) sleep. The exact cause of nightmares is not known..</p>
+                    <p className="text-gray-500 sm:text-xl dark:text-gray-400">Nightmare disorder is referred to by doctors as a parasomnia — a type of sleep disorder that involves undesirable experiences that occur while you&apos;re falling asleep, during sleep or when you&apos;re waking up. Nightmares usually occur during the stage of sleep known as rapid eye movement (REM) sleep. The exact cause of nightmares is not known..</p>
                 </div>
                 <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
                     <div>
@@ -91,7 +91,7 @@ export default function counselling()
                             <svg className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path></svg>
                         </div>
                         <h3 className="mb-2 text-xl font-bold dark:text-white">Medications</h3>
-                        <p className="text-gray-500 dark:text-gray-400">Some drugs — including certain antidepressants, blood pressure medications, beta blockers, and drugs used to treat Parkinson's disease or to help stop smoking — can trigger nightmares.</p>
+                        <p className="text-gray-500 dark:text-gray-400">Some drugs — including certain antidepressants, blood pressure medications, beta blockers, and drugs used to treat Parkinson&apos;s disease or to help stop smoking — can trigger nightmares.</p>
                     </div>
                     <div>
                     <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
