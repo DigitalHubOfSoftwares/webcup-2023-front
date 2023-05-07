@@ -2,6 +2,7 @@ import React, { useEffect, useState }  from "react";
 import Layout from "@/src/components/Layout";
 import { useRouter } from "next/router";
 import ChatBot from "../components/ChatBot/ChatBot";
+import MyModal from "../components/MyModal/MyModal";
 
 
 export default function Chat() {
@@ -54,7 +55,8 @@ export default function Chat() {
 
     return (
         <Layout title={'Power Your Dreams'} logOut={logOut} IsLoggedIn={isLoggedIn}>
-            <div className="flex w-full h-full">
+			
+            <div className="flex w-full px-5 my-4 lg:px-1">
 				<ChatBot/>
             </div>
         </Layout>
