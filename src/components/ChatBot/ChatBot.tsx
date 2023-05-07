@@ -37,6 +37,9 @@ const ChatBot = () => {
 
     return (
         <ChatLayout>
+            <div className="text-center">
+            Welcome to Onirix, the revolutionary artificial intelligence system that can predict your future based on your dreams! Our state-of-the-art technology is the result of years of research and development by the International Dreams Institute, a leading organization in the field of dream studies.
+            </div>
             <ChatHeader/>
             <div className="w-full my-7">
                 <ChatView data={predictions}/>
