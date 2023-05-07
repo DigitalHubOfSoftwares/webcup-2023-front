@@ -108,44 +108,67 @@ export default function Blog() {
 						</div>
 					</div>
 				</section>
-				<div className="grid border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:grid-cols-3 p-12">
-					<figure className="flex flex-col items-center justify-center p-2 m-2 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
-						<blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-						<h3 className="text-lg font-semibold text-gray-900 dark:text-white">Accurate Dream Analysis for Valuable Insights</h3>
-						<p className="my-4">Onirix decoded my dreams with accuracy, providing valuable insights. Highly recommend!</p>
-						</blockquote>
-					</figure>
-					<figure className="flex flex-col items-center justify-center p-2 m-2 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
-						<blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-						<h3 className="text-lg font-semibold text-gray-900 dark:text-white">Take Control of Your Future with Onirix&apos;s Spot-On Predictions</h3>
-						<p className="my-4">Thanks to Onirix, I feel more in control of my future. The personalized predictions are spot-on!</p>
-						</blockquote>
-					</figure>
-					<figure className="flex flex-col items-center justify-center p-2 m-2 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
-						<blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-						<h3 className="text-lg font-semibold text-gray-900 dark:text-white">The Easy-to-Use Dream Analysis Website with Clear and Accurate Results</h3>
-						<p className="my-4">The Onirix website is easy to use and provides clear and accurate results. Highly recommended.</p>
-						</blockquote>
-					</figure>
-					<figure className="flex flex-col items-center justify-center p-2 m-2 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
-						<blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-						<h3 className="text-lg font-semibold text-gray-900 dark:text-white">Get Surprisingly Accurate Predictions with Onirix&apos;s Personalized Dream Analysis </h3>
-						<p className="my-4">Onirix provides personalized predictions that are surprisingly accurate. Highly impressed!</p>
-						</blockquote>   
-					</figure>
-					<figure className="flex flex-col items-center justify-center p-2 m-2 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
-						<blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-						<h3 className="text-lg font-semibold text-gray-900 dark:text-white">Get Surprisingly Accurate Predictions with Onirix&apos;s Personalized Dream Analysis </h3>
-						<p className="my-4">Onirix provides personalized predictions that are surprisingly accurate. Highly impressed!</p>
-						</blockquote>   
-					</figure>
-					<figure className="flex flex-col items-center justify-center p-2 m-2 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
-						<blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-						<h3 className="text-lg font-semibold text-gray-900 dark:text-white">Get Surprisingly Accurate Predictions with Onirix&apos;s Personalized Dream Analysis </h3>
-						<p className="my-4">Onirix provides personalized predictions that are surprisingly accurate. Highly impressed!</p>
-						</blockquote>   
-					</figure>
+				<div>
+				<div className="text-center">
+				<h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Partners</h2>
 				</div>
+
+					<div className="grid mb-8 border p-16 border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-3">
+				<figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
+					<blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+					</blockquote>
+					<figcaption className="flex items-center justify-center space-x-3">
+					<img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://drive.google.com/uc?id=1-RZaK_9JeC-ob8trW4BE9HlpCHi-JrMC" alt="profile picture" />
+					</figcaption>
+				</figure>
+				<figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
+					<blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+					</blockquote>
+					<figcaption className="flex items-center justify-center space-x-3">
+					<img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://drive.google.com/uc?id=1_5dqbGRXyWY1qKW4kYH23PMlBai5ftG0" alt="profile picture" />
+					</figcaption>
+				</figure>
+				<figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
+					<blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+					</blockquote>
+					<figcaption className="flex items-center justify-center space-x-3">
+					<img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://drive.google.com/uc?id=17PSXdnI7j1TIRxXbEgQ_EnmQSJbNsBNL" alt="profile picture" />
+					</figcaption>
+				</figure>
+				<figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
+					<blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+					</blockquote>
+					<figcaption className="flex items-center justify-center space-x-3">
+					<img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://drive.google.com/uc?id=1FRC_ReWR9lDGCXH1zZJu4L43f-zq__5w" alt="profile picture" />
+					</figcaption>
+				</figure>
+				<figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
+					<blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+					</blockquote>
+					<figcaption className="flex items-center justify-center space-x-3">
+					<img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://drive.google.com/uc?id=1EmH7eJtVooSFRmtmHbK2PEfxjo6Hxk0r" alt="profile picture" />
+					</figcaption>
+				</figure>
+				<figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
+					<blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+					</blockquote>
+					<figcaption className="flex items-center justify-center space-x-3">
+					<img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://drive.google.com/uc?id=1a45L35QOLrHUTJMJbhO6uyeFpaaxv6P4" alt="profile picture" />
+					</figcaption>
+				</figure>
+				</div>
+				</div>
+				<section className="relative h-[31rem] overflow-hidden">
+					<div className=" relative flex flex-col items-center justify-center z-20 py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+						<h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Get Help and Support with Counseling Services</h1>
+						<p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Are you struggling with personal issues and feeling overwhelmed? Don't suffer alone - counseling can provide a safe and supportive space to work through your challenges. Our experienced counselors are here to help you develop coping skills and gain new insights to improve your mental and emotional wellbeing. Contact us today to schedule an appointment and take the first step towards a happier and healthier life.</p>
+						<Link href="https://www.mayoclinic.org/diseases-conditions/nightmare-disorder/symptoms-causes/syc-20353515#:~:text=Depression%20and%20other%20mental%20health,be%20associated%20with%20having%20nightmares" className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+							<span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+								TRY MAYO CLINIC
+							</span>
+						</Link>
+					</div>
+				</section>
 			</div>
 		</Layout>
 	);
