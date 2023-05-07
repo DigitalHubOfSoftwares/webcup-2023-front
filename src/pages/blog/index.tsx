@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Layout from '@/src/components/Layout';
 import { useRouter } from "next/router";
 import Link from 'next/link';
@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function Blog() {
 	const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
 	const router = useRouter();
-
+	const myRef = useRef(null);
 	useEffect(() => {
         const checkLoggedIn = async () => {
 			const response = await fetch(process.env.NEXT_PUBLIC_BACKEND_API_DATA as string, {
@@ -86,6 +86,44 @@ export default function Blog() {
 							<h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Unlock Your True Potential with Onirix: Decode the Messages Hidden Within Your Dreams</h2>
 							<p className="mb-4">At Onirix, we believe that dreams hold the key to unlocking our true potential. Our advanced artificial intelligence technology helps you decode the messages hidden within your dreams, providing you with valuable insights and guidance for the future. Whether you&apos;re seeking to improve your relationships, advance your career, or enhance your spiritual growth, Onirix can help you tap into your inner wisdom and achieve your goals. Join us on this journey of self-discovery and unlock the power of your dreams with Onirix.</p>
 						</div>
+					</div>
+				</section>
+				<section id="rmtcontent" ref={myRef} className="" style={{ margin: '0 `auto`', width: '500px' }}>
+					<div className="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+						<div className="flex items-center justify-between mb-4">
+							<h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">Pricing Plan</h5>
+					</div>
+					<div className="flow-root">
+							<ul role="list" className="divide-y divide-gray-200 dark:divide-gray-700">
+								<li className="py-3 sm:py-4">
+									<div className="flex items-center space-x-4">
+										<div className="flex-1 min-w-0">
+											<p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+												Free Plan
+											</p>
+										</div>
+										<div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+											$0
+										</div>
+									</div>
+								</li>
+								<li className="py-3 sm:py-4">
+									<div className="flex items-center space-x-4">
+										<div className="flex-1 min-w-0">
+											<p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+												Professional Plan
+											</p>
+											<p className="text-sm text-gray-500 truncate dark:text-gray-400">
+												Unlimited APIs
+											</p>
+										</div>
+										<div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+											Contact Us
+										</div>
+									</div>
+								</li>
+							</ul>
+					</div>
 					</div>
 				</section>
 				<div className="grid border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:grid-cols-2">
