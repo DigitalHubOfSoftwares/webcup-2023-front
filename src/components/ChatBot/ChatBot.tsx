@@ -10,20 +10,6 @@ type Prediction = {
 const ChatBot = () => {
 
     const [predictions, setPredictions] = useState<Prediction[]>([]);
-    const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
-
-    const handleDarkModeToggle = () => {
-        console.log("toggle DarkMode" + isDarkMode);
-        if (isDarkMode == false) {
-          document.documentElement.classList.add('dark');
-          localStorage.setItem('color-mode', 'dark');
-          setIsDarkMode(true);
-        } else {
-          document.documentElement.classList.remove('dark');
-          localStorage.setItem('color-mode', 'light');
-          setIsDarkMode(false);
-        }
-    }
 
     const handleSubmit = (prediction: any) => {
         console.log(prediction);
@@ -61,7 +47,7 @@ const ChatBot = () => {
             </div>
             <InputComponent handleSubmit={handleSubmit} />
 
-            <button onClick={handleDarkModeToggle}>Toggle</button>
+            
         </ChatLayout>  
     );
 }
