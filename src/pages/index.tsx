@@ -63,10 +63,10 @@ export default function Blog() {
 							<p className="mb-4">
 							&quot;Our state-of-the-art technology is the result of years of research and development by the International Dreams Institute, a leading organization in the field of dream studies.&quot;
 							</p>
-							<a href="onirix" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#81007f] hover:bg-[#BF13E3]/[.6] rounded-lg focus:ring-4 focus:outline-non">
+							<Link href="/onirix" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#81007f] hover:bg-[#BF13E3]/[.6] rounded-lg focus:ring-4 focus:outline-non">
 							Try Onirix
 							<svg aria-hidden="true" className="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-						</a>
+						</Link>
 						</div>
 						<div className="grid grid-cols-2 gap-4 mt-8">
 							<img className="w-full rounded-lg" src="https://drive.google.com/uc?id=1Ln2XIhBcNbTL0VLb5HVzPJibwZQjp422" alt="office content 1"/>
