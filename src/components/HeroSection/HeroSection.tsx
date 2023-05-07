@@ -5,7 +5,7 @@ const HeroSection = () => {
 	return (
 		<section className="relative h-[31rem] overflow-hidden">
 				<video autoPlay muted loop className="absolute w-full object-cover z-0 blur-sm">
-						<source src={process.env.NEXT_PUBLIC_PREFIX_URL + "/assets/videos/hero-section-vid.mp4"} type="video/mp4" />
+						<source src={process.env.NEXT_PUBLIC_PREFIX_URL + "/assets/videos/banner.mp4"} type="video/mp4" />
 				</video>
 				<div className=" relative flex flex-col items-center justify-center z-20 py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
 					<h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Predict your future, one dream at a time with Onirix.</h1>
