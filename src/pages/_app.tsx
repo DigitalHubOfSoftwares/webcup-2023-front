@@ -8,6 +8,11 @@ export default function App({ Component, pageProps }: AppProps) {
 	const maintenanceEnd = new Date(2023, 4, 7, 10, 0, 0); // May 17th, 2023 at 10:30:00 AM
 
 	useEffect(() => {
+		document.documentElement.classList.add('dark');
+	});
+	
+
+	useEffect(() => {
 			fetch(process.env.NEXT_PUBLIC_BACKEND_API_MAINTENANCE as string, {}).then(response => response.json())
 			.then(data => {
 				setIsUnderMaintenance(data)
