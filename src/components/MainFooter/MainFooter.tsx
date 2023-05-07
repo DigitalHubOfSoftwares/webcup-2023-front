@@ -36,6 +36,9 @@ const MainFooter: React.FC<footerProps> = ({ app_name = 'DHS', IsLoggedIn}) => {
 										<Link href="journal" className="hover:underline">View Journal</Link>
 									</li>
 								)}
+								<li className="mb-4">
+									<Link href="faq" className="hover:underline">FAQ</Link>
+								</li>
 							</ul>
 						</div>
 						<div>
