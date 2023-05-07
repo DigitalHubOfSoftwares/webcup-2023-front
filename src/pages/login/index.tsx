@@ -7,6 +7,7 @@ export default function Login() {
 	const [email, setEmail] = useState<string>('');
 	const [password, setPassword] = useState<string>('');
 	const [isLoggedIn, setIsLoggedIn] = useState<boolean>(true);
+	const [IsLoading, setIsLoading] = useState<boolean>(false);
 	const router = useRouter();
 
 	useEffect(() => {
@@ -38,6 +39,7 @@ export default function Login() {
 		console.log('Email:' + email);
 		console.log('Password:' + password);
 		console.log('Logging In');
+		setIsLoading(true);
 
 		const response = await fetch(process.env.NEXT_PUBLIC_BACKEND_API_LOGIN as string, {
 			method: 'POST',
@@ -54,6 +56,7 @@ export default function Login() {
 		if (response.ok) {
 			const data = await response.json();
 			const cookies = response.headers.get('Set-Cookie');
+			setIsLoading(false);
 			if (cookies) {
 				document.cookie = cookies;
 			}
@@ -74,7 +77,7 @@ export default function Login() {
 
 	return (
 		<>
-			{ isLoggedIn == false && (<LoginForm onSubmit={handleSubmit} email={email} setEmail={setEmail} password={password} setPassword={setPassword}/>)}
+			{ isLoggedIn == false && (<LoginForm onSubmit={handleSubmit} email={email} setEmail={setEmail} password={password} setPassword={setPassword} IsLoading={IsLoading}/>)}
 		</>
 	);
 }
