@@ -58,7 +58,7 @@ export default function Research() {
 					<div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
 						<h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Research</h1>
 						<p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-                            The International Dreams Institute is a leading organization in dream studies that has made a groundbreaking discovery - dreams can predict the future! Using our advanced AI system, Onirix, we analyze and decode users' dreams to provide personalized premonitory predictions about upcoming events. Our team of scientists and dream experts have conducted extensive research to refine Onirix's algorithms, ensuring the accuracy and reliability of its predictions. By harnessing the power of artificial intelligence, we provide individuals with a unique glimpse into their future and help them prepare for what's to come. Learn more about Onirix and our ongoing research projects on this page. Join us on this exciting journey and discover the power of your dreams!
+                            The International Dreams Institute is a leading organization in dream studies that has made a groundbreaking discovery - dreams can predict the future! Using our advanced AI system, Onirix, we analyze and decode users&apos; dreams to provide personalized premonitory predictions about upcoming events. Our team of scientists and dream experts have conducted extensive research to refine Onirix&apos;s algorithms, ensuring the accuracy and reliability of its predictions. By harnessing the power of artificial intelligence, we provide individuals with a unique glimpse into their future and help them prepare for what&apos;s to come. Learn more about Onirix and our ongoing research projects on this page. Join us on this exciting journey and discover the power of your dreams!
                         </p>
 					</div>
 				</section>
@@ -84,7 +84,7 @@ export default function Research() {
                             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                             <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2016</time>
                             <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                            The first version of Onirix is developed, using a combination of natural language processing and machine learning algorithms to analyze and interpret dream content. The system is tested extensively using data from the International Dreams Institute's ongoing research studies.
+                            The first version of Onirix is developed, using a combination of natural language processing and machine learning algorithms to analyze and interpret dream content. The system is tested extensively using data from the International Dreams Institute&apos;s ongoing research studies.
                             </p>
                         </li>
                         <li className="mb-10 ml-4">
@@ -105,7 +105,7 @@ export default function Research() {
                             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                             <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2017</time>
                             <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                            Onirix becomes widely available to the public, attracting millions of users from around the world. The International Dreams Institute continues to conduct research on the science of dreams and the implications of Onirix's predictive capabilities.
+                            Onirix becomes widely available to the public, attracting millions of users from around the world. The International Dreams Institute continues to conduct research on the science of dreams and the implications of Onirix&apos;s predictive capabilities.
                             </p>
                         </li>
                     </ol>
