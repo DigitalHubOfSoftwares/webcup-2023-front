@@ -8,11 +8,11 @@ interface ChatTextProps {
 const ChatText: React.FC<ChatTextProps> = ({ fromChatBot, toChatBot }) => {
     return (
         <div className="flex flex-col w-full">
-            <div className="flex w-full justify-end">
-                <span className="px-3 py-1 text-black shadow-lg rounded-full bg-teal-400/[.3] dark:text-white">{ toChatBot }</span>
+            <div className="flex w-full justify-end bg-teal-400/[.3] my-2 px-3 rounded-full">
+                <span className="px-3 py-1 text-black shadow-lg rounded-full  dark:text-white">{ toChatBot }</span>
             </div>
-            <div className="flex w-full justify-start">
-                <span className="px-3 py-1 bg-primary-300/[.3] shadow-lg text-black rounded-full dark:text-white">{ fromChatBot }</span>
+            <div className="flex w-full justify-start bg-primary-300/[.3] my-2 px-3 rounded-full">
+                <span className="px-3 py-1 shadow-lg text-black rounded-full dark:text-white">{ fromChatBot }</span>
             </div>
         </div>
     );
