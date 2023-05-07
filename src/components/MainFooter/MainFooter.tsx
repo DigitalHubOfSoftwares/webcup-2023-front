@@ -14,7 +14,7 @@ const MainFooter: React.FC<footerProps> = ({ app_name = 'DHS', IsLoggedIn}) => {
 				<div className="md:flex md:justify-between">
 					<div className="mb-6 md:mb-0">
 						<Link href="https://flowbite.com" className="flex items-center">
-							<Image src={process.env.NEXT_PUBLIC_PREFIX_URL + '/assets/images/main-logo.jpg'} width={135} height={100} className="mr-3 h-8 rounded" alt="FlowBite Logo" />
+							<Image src={process.env.NEXT_PUBLIC_PREFIX_URL + '/assets/images/idi-logo.jpg'} width={135} height={100} className="mr-3 h-8 rounded" alt="FlowBite Logo" />
 							<span className="self-center text-2xl hidden font-bold whitespace-nowrap">{ app_name }</span>
 						</Link>
 					</div>

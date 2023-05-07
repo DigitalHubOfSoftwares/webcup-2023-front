@@ -29,7 +29,7 @@ const MainHeader: React.FC<headerProps> = ({ app_name = 'DHS', logOut, IsLoggedI
 			<nav className="bg-[#8f00ff]/[.3] backdrop-blur font-bold border-gray-200 px-1 lg:px-1 py-6">
 				<div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
 					<Link href="https://flowbite.com" className="flex items-center">
-						<Image src={process.env.NEXT_PUBLIC_PREFIX_URL + '/assets/images/main-logo.jpg'} width={140} height={200} className="mr-3 h-6 sm:h-9 rounded" alt="Flowbite Logo" />
+						<Image src={process.env.NEXT_PUBLIC_PREFIX_URL + '/assets/images/idi-logo.jpg'} width={140} height={200} className="mr-3 h-6 sm:h-9 rounded" alt="Flowbite Logo" />
 						<span className="self-center text-xl font-semibold whitespace-nowrap text-black hidden">{app_name}</span>
 					</Link>
 					<div className="flex items-center lg:order-2">
