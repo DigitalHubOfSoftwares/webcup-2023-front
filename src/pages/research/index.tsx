@@ -66,7 +66,7 @@ export default function Research() {
                     <ol className="relative border-l border-gray-200 dark:border-gray-700">                  
                         <li className="mb-10 ml-4">
                             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                            <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2028</time>
+                            <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2013</time>
                             <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
                                 The International Dreams Institute begins a large-scale study on the relationship between dream content and real-life events. 
                             
@@ -82,28 +82,28 @@ export default function Research() {
                         </li>
                         <li className="mb-10 ml-4">
                             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                            <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2016</time>
+                            <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">June 2016</time>
                             <p className="text-base font-normal text-gray-500 dark:text-gray-400">
                             The first version of Onirix is developed, using a combination of natural language processing and machine learning algorithms to analyze and interpret dream content. The system is tested extensively using data from the International Dreams Institute&apos;s ongoing research studies.
                             </p>
                         </li>
                         <li className="mb-10 ml-4">
                             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                            <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2017</time>
+                            <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Dec 2017</time>
                             <p className="text-base font-normal text-gray-500 dark:text-gray-400">
                             Onirix is used to predict several major real-life events, including the outcome of a political election and the occurrence of a natural disaster. The accuracy of these predictions is validated through rigorous testing and analysis.
                             </p>
                         </li>
                         <li className="mb-10 ml-4">
                             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                            <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2017</time>
+                            <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">May 2020</time>
                             <p className="text-base font-normal text-gray-500 dark:text-gray-400">
                             The International Dreams Institute partners with technology experts to develop a user-friendly website where individuals can submit the description of their dreams and receive personalized predictions about their future. The website also provides information about the science of dreams and the technology behind Onirix.
                             </p>
                         </li>
                         <li className="mb-10 ml-4">
                             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                            <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2017</time>
+                            <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2023</time>
                             <p className="text-base font-normal text-gray-500 dark:text-gray-400">
                             Onirix becomes widely available to the public, attracting millions of users from around the world. The International Dreams Institute continues to conduct research on the science of dreams and the implications of Onirix&apos;s predictive capabilities.
                             </p>

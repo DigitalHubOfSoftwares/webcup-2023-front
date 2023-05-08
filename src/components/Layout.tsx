@@ -12,7 +12,6 @@ type LayoutProps = {
 };
 
 const Layout: React.FC<LayoutProps> = ({ children, title = 'DHS', logOut, IsLoggedIn }) => {
-
 	const AppName : string | undefined = process.env.NEXT_PUBLIC_APP_NAME;
 	console.log(IsLoggedIn);
   return (
