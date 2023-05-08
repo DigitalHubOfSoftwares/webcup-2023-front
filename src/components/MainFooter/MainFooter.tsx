@@ -24,7 +24,7 @@ const MainFooter: React.FC<footerProps> = ({ app_name = 'DHS', IsLoggedIn}) => {
 						<h2 className="mb-6 text-sm font-bold text-white uppercase">Quick Links</h2>
 						<ul>
 							<li>
-								<Link href="blog" className="hover:underline">Suggestion For Nightmares</Link>
+								<Link href="" className="hover:underline">Suggestion For Nightmares</Link>
 							</li>
 						</ul>
 					</div>
@@ -33,10 +33,10 @@ const MainFooter: React.FC<footerProps> = ({ app_name = 'DHS', IsLoggedIn}) => {
 							<h2 className="mb-6 text-sm font-bold text-white uppercase">Quick Links</h2>
 							<ul className="text-white">
 								<li className="mb-4">
-									<Link href="blog" className="hover:underline">Blog</Link>
+									<Link href="" className="hover:underline">Home</Link>
 								</li>
 								<li className="mb-4">
-									<Link href="/" className="hover:underline">Try Onirix</Link>
+									<Link href="/onirix" className="hover:underline">Try Onirix</Link>
 								</li>
 								{IsLoggedIn == true && (
 									<li className="mb-4">
